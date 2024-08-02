@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .image-prompt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-item:hover .image-prompt {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Image Gallery</h1>
+        <div class="row" id="gallery">
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/sMKFYxFe1NbkbZRHrdPCD.png" alt="A dynamic, action-packed scene of a steampunk city under siege by colossal, mechanical dragons. The cityscape is a blend of Victorian architecture and futuristic technology, with steam and smoke filling the air. The artwork is a vibrant, high-contrast digital painting, capturing the chaos and grandeur of the battle. Inspired by the styles of Moebius and Katsuhiro Otomo, showcased in 8K on CGSociety." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dynamic, action-packed scene of a steampunk city under siege by colossal, mechanical dragons. The cityscape is a blend of Victorian architecture and futuristic technology, with steam and smoke filling the air. The artwork is a vibrant, high-contrast digital painting, capturing the chaos and grandeur of the battle. Inspired by the styles of Moebius and Katsuhiro Otomo, showcased in 8K on CGSociety.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/eqL7XFle-0zC9A2F2ZmcG.png" alt="A futuristic cyberpunk cityscape at dusk, with neon-lit skyscrapers and flying cars, a lone cyber-samurai standing on a rooftop, digital painting, high contrast, sharp focus, moody atmosphere, art by Syd Mead and H.R. Giger, 8K resolution." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk cityscape at dusk, with neon-lit skyscrapers and flying cars, a lone cyber-samurai standing on a rooftop, digital painting, high contrast, sharp focus, moody atmosphere, art by Syd Mead and H.R. Giger, 8K resolution.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/qGyGD5Cv87pQ1BGW1XeEA.png" alt="A vibrant, abstract depiction of a cosmic dance performance set against the backdrop of a pulsating, multicolored aurora, featuring fluid, graceful figures intertwined with swirling, kinetic energy lines, inspired by the dynamic, expressive works of Wassily Kandinsky and the vivid, energetic palette of James Jean, with a composition that captures the essence of movement and harmony." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A vibrant, abstract depiction of a cosmic dance performance set against the backdrop of a pulsating, multicolored aurora, featuring fluid, graceful figures intertwined with swirling, kinetic energy lines, inspired by the dynamic, expressive works of Wassily Kandinsky and the vivid, energetic palette of James Jean, with a composition that captures the essence of movement and harmony.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/fkSmSfbiwD9lc9mGuBE6Z.png" alt="A hyper-detailed digital portrait of a cybernetic samurai warrior, with intricate metallic armor and glowing neon accents, set against a dystopian urban backdrop, illustrated in a blend of Katsuhiro Otomo and Syd Mead's styles, with sharp contrasts and futuristic neon lighting." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A hyper-detailed digital portrait of a cybernetic samurai warrior, with intricate metallic armor and glowing neon accents, set against a dystopian urban backdrop, illustrated in a blend of Katsuhiro Otomo and Syd Mead's styles, with sharp contrasts and futuristic neon lighting.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/aB3bx3_leJPNRlXTHyqqj.png" alt="A surreal underwater ballroom dance featuring anthropomorphic sea creatures in elegant Victorian attire, the scene illuminated by soft, shifting bioluminescent lights, art by James Gurney and Salvador Dalí, pastel blue and green palette, ultra-detailed, trending on Artstation, 8K." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surreal underwater ballroom dance featuring anthropomorphic sea creatures in elegant Victorian attire, the scene illuminated by soft, shifting bioluminescent lights, art by James Gurney and Salvador Dalí, pastel blue and green palette, ultra-detailed, trending on Artstation, 8K.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/z9kRCgTtnO2oALzjulKKL.png" alt="A serene landscape of a floating island amidst a nebula, with ancient, luminous trees and waterfalls cascading into the void, rendered in a blend of Art Nouveau and cyberpunk aesthetics, highly detailed, digital painting, art by Yoshitaka Amano and Beksinski, with a soft, ethereal glow and a sense of otherworldly tranquility." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene landscape of a floating island amidst a nebula, with ancient, luminous trees and waterfalls cascading into the void, rendered in a blend of Art Nouveau and cyberpunk aesthetics, highly detailed, digital painting, art by Yoshitaka Amano and Beksinski, with a soft, ethereal glow and a sense of otherworldly tranquility.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/tHAG3imiBm2TghxP6YyQC.png" alt="A photorealistic depiction of a Victorian-era inventor's workshop, filled with steam-powered gadgets and clockwork mechanisms, illuminated by warm candlelight and soft shadows, in the style of a historical photograph by Julia Margaret Cameron, with meticulous attention to detail and period accuracy." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A photorealistic depiction of a Victorian-era inventor's workshop, filled with steam-powered gadgets and clockwork mechanisms, illuminated by warm candlelight and soft shadows, in the style of a historical photograph by Julia Margaret Cameron, with meticulous attention to detail and period accuracy.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/PSb-sjKZM98XjctfrJaJL.png" alt="A dramatic steampunk airship battle in the clouds, with steam-powered robots and Victorian-era soldiers, highly detailed, digital painting, artstation, concept art, by kekai kotaki, ian miller, and roger dean, dynamic lighting, sharp focus, cinematic atmosphere, metallic textures, depth of field." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dramatic steampunk airship battle in the clouds, with steam-powered robots and Victorian-era soldiers, highly detailed, digital painting, artstation, concept art, by kekai kotaki, ian miller, and roger dean, dynamic lighting, sharp focus, cinematic atmosphere, metallic textures, depth of field.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/X9DLqAKwXxlPXpRAQpxCR.png" alt="A serene digital painting of a futuristic cityscape at twilight, with floating islands and bioluminescent flora, rendered in a hyper-realistic style with intricate details, inspired by the works of Syd Mead and H.R. Giger, trending on ArtStation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene digital painting of a futuristic cityscape at twilight, with floating islands and bioluminescent flora, rendered in a hyper-realistic style with intricate details, inspired by the works of Syd Mead and H.R. Giger, trending on ArtStation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/IKTymNAMVbW2lISCERYHe.png" alt="A surrealistic landscape where the sky is a canvas of swirling galaxies and nebulae, with a lone tree standing in a field of floating islands, each island hosting a different ecosystem, painted in a blend of Impressionism and Surrealism, reminiscent of Salvador Dalí and Claude Monet." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic landscape where the sky is a canvas of swirling galaxies and nebulae, with a lone tree standing in a field of floating islands, each island hosting a different ecosystem, painted in a blend of Impressionism and Surrealism, reminiscent of Salvador Dalí and Claude Monet.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/u0w6ESmvH0wuIACLgK-u_.png" alt="A futuristic cyberpunk street market at night, bustling with diverse cybernetic characters and neon signs, by Syd Mead and H.R. Giger, with a gritty, high-contrast color palette, intricate details, and a sense of movement, digital painting, Artstation, concept art, and a dystopian yet vibrant mood." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market at night, bustling with diverse cybernetic characters and neon signs, by Syd Mead and H.R. Giger, with a gritty, high-contrast color palette, intricate details, and a sense of movement, digital painting, Artstation, concept art, and a dystopian yet vibrant mood.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/DwXpuelyRmPIt19b0UXNT.png" alt="A dramatic clash between ancient warriors and futuristic mechs on a floating island above the clouds, in the style of Frank Frazetta and H.R. Giger, with a dark, moody atmosphere, high contrast lighting, and a sense of epic battle, highly detailed concept art, trending on CGSociety, with a blend of fantasy and sci-fi elements." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dramatic clash between ancient warriors and futuristic mechs on a floating island above the clouds, in the style of Frank Frazetta and H.R. Giger, with a dark, moody atmosphere, high contrast lighting, and a sense of epic battle, highly detailed concept art, trending on CGSociety, with a blend of fantasy and sci-fi elements.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/bku01Ihi7dncgNoBST_rE.png" alt="A surrealistic dreamscape of a floating city amidst nebula clouds, by Salvador Dalí and Hayao Miyazaki, with a vibrant pastel color palette, ethereal lighting, and intricate architectural details, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic dreamscape of a floating city amidst nebula clouds, by Salvador Dalí and Hayao Miyazaki, with a vibrant pastel color palette, ethereal lighting, and intricate architectural details, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/qfqERPNzSr3hoGpiSCu-h.png" alt="An ethereal forest of floating islands, each adorned with ancient, mystical runes and surrounded by swirling mist, depicted in a surrealist watercolor style with a muted pastel color scheme, art by Hayao Miyazaki and Salvador Dalí." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal forest of floating islands, each adorned with ancient, mystical runes and surrounded by swirling mist, depicted in a surrealist watercolor style with a muted pastel color scheme, art by Hayao Miyazaki and Salvador Dalí.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/FGoSY-4_4VE9Q9EVNsyDf.png" alt="A solitary astronaut standing on the desolate surface of an alien planet, surrounded by towering, crystalline structures that refract the planet's twin suns, creating a kaleidoscope of colors, inspired by the surreal landscapes of Zdzisław Beksiński and the scientific precision of Chesley Bonestell, with a focus on the astronaut's reflective visor and the vast, eerie beauty of the alien environment, rendered in high-resolution for a sense of awe and isolation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A solitary astronaut standing on the desolate surface of an alien planet, surrounded by towering, crystalline structures that refract the planet's twin suns, creating a kaleidoscope of colors, inspired by the surreal landscapes of Zdzisław Beksiński and the scientific precision of Chesley Bonestell, with a focus on the astronaut's reflective visor and the vast, eerie beauty of the alien environment, rendered in high-resolution for a sense of awe and isolation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/Bl31cmV4hi63Rjk9MUNaP.png" alt="A futuristic cyberpunk street market in Tokyo, bustling with neon-lit holographic vendors and diverse crowds, professionally retouched, realistic, wide-angle shot, sharp focus, 8K high definition, insanely detailed, intricate, elegant, art by Tetsuya Nomura and Syd Mead" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market in Tokyo, bustling with neon-lit holographic vendors and diverse crowds, professionally retouched, realistic, wide-angle shot, sharp focus, 8K high definition, insanely detailed, intricate, elegant, art by Tetsuya Nomura and Syd Mead</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/zT-ZcAkImO6M_XAizt6AT.png" alt="A steampunk cityscape at dusk with airships and Victorian-era architecture, rendered in the style of H.R. Giger, Alphonse Mucha, and Syd Mead, with metallic textures, warm golden hour lighting, and a sense of industrial elegance, detailed illustration, trending on ArtStation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A steampunk cityscape at dusk with airships and Victorian-era architecture, rendered in the style of H.R. Giger, Alphonse Mucha, and Syd Mead, with metallic textures, warm golden hour lighting, and a sense of industrial elegance, detailed illustration, trending on ArtStation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/H3APpjzw3LLDGlaIc3x0Z.png" alt="A vibrant digital painting of a futuristic cityscape at dusk, neon lights reflecting on rain-soaked streets, in the style of Moebius and Syd Mead, with a cyberpunk atmosphere, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A vibrant digital painting of a futuristic cityscape at dusk, neon lights reflecting on rain-soaked streets, in the style of Moebius and Syd Mead, with a cyberpunk atmosphere, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/-_dP1lOSpNab6HDxJ1ofT.png" alt="A whimsical, detailed scene of a Victorian-era tea party, where anthropomorphic animals in elegant attire converse under a canopy of cherry blossoms. This digital painting combines the charm of classic British literature with the whimsy of Japanese anime, drawing inspiration from Beatrix Potter and Hayao Miyazaki, with a focus on rich textures and soft, inviting lighting." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical, detailed scene of a Victorian-era tea party, where anthropomorphic animals in elegant attire converse under a canopy of cherry blossoms. This digital painting combines the charm of classic British literature with the whimsy of Japanese anime, drawing inspiration from Beatrix Potter and Hayao Miyazaki, with a focus on rich textures and soft, inviting lighting.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/IaurywRSC1v8PtlwUUKSe.png" alt="**Neon Noir Metropolis**: A sprawling cyberpunk cityscape under a perpetual rainstorm, neon signs reflecting on wet streets, with a lone cyber-samurai walking under a holographic billboard, photorealistic, cinematic lighting, influenced by the works of Syd Mead and Ridley Scott, featured on Pixiv, HDR, 4K." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>**Neon Noir Metropolis**: A sprawling cyberpunk cityscape under a perpetual rainstorm, neon signs reflecting on wet streets, with a lone cyber-samurai walking under a holographic billboard, photorealistic, cinematic lighting, influenced by the works of Syd Mead and Ridley Scott, featured on Pixiv, HDR, 4K.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/X5NRUbUJNpGu2FvRcUxbp.png" alt="An ethereal forest where ancient trees are intertwined with floating geometric structures, abstract fantasy landscape, painted in a muted pastel palette with golden hour lighting, art by Hayao Miyazaki and Salvador Dalí, trending on Pixiv." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal forest where ancient trees are intertwined with floating geometric structures, abstract fantasy landscape, painted in a muted pastel palette with golden hour lighting, art by Hayao Miyazaki and Salvador Dalí, trending on Pixiv.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/-Lj9wCjJ9cvEpR2ozaJLC.png" alt="An ethereal forest at twilight, where floating lanterns illuminate mystical creatures like fairies and unicorns, surrealist, pastel palette, dreamlike quality, intricate details, art by Hayao Miyazaki and Salvador Dalí, concept art for a fantasy film." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal forest at twilight, where floating lanterns illuminate mystical creatures like fairies and unicorns, surrealist, pastel palette, dreamlike quality, intricate details, art by Hayao Miyazaki and Salvador Dalí, concept art for a fantasy film.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/Hhr6liQltPBobjVlnjhyU.png" alt="A steampunk airship hovering over a Victorian-era city, with intricate machinery and brass details, dramatic lighting, high detail, concept art, low angle, warm lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by charles vess, huge scene, steam, art greg rutkowski" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A steampunk airship hovering over a Victorian-era city, with intricate machinery and brass details, dramatic lighting, high detail, concept art, low angle, warm lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by charles vess, huge scene, steam, art greg rutkowski</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/FDv46b2zLrxI-L1u-YDjP.png" alt="A vintage circus poster depicting a graceful acrobat in a sequined leotard performing an impossible feat of balance on a tightrope, the background a riot of colorful tents and bustling crowds, rendered in a nostalgic, sepia-toned palette with intricate line work and textures, invoking the charm of bygone eras, by the likes of J.C. Leyendecker and Edward Gorey." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A vintage circus poster depicting a graceful acrobat in a sequined leotard performing an impossible feat of balance on a tightrope, the background a riot of colorful tents and bustling crowds, rendered in a nostalgic, sepia-toned palette with intricate line work and textures, invoking the charm of bygone eras, by the likes of J.C. Leyendecker and Edward Gorey.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/9T-O1THE1hzJ2iA_snnuH.png" alt="An ethereal forest where trees are made of crystal and the sky is a tapestry of northern lights, digital painting by Thomas Kinkade and Moebius, with a focus on intricate details and a palette of vibrant blues and greens, 8K, dreamlike atmosphere." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal forest where trees are made of crystal and the sky is a tapestry of northern lights, digital painting by Thomas Kinkade and Moebius, with a focus on intricate details and a palette of vibrant blues and greens, 8K, dreamlike atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/WC3QQaUpWtDw6rrQshHei.png" alt="A whimsical forest scene where ancient trees are adorned with glowing lanterns and floating fairies, capturing a twilight ambiance, intricate, elegant, highly detailed, digital painting, behance, concept art, smooth, sharp focus, illustration, art by hayao miyazaki and thomas kinkade and roger dean" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical forest scene where ancient trees are adorned with glowing lanterns and floating fairies, capturing a twilight ambiance, intricate, elegant, highly detailed, digital painting, behance, concept art, smooth, sharp focus, illustration, art by hayao miyazaki and thomas kinkade and roger dean</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/Sxo6J9mMEyUH__M9-ENqA.png" alt="A dynamic action scene featuring a celestial archer in mid-flight, shooting arrows of light towards a cosmic dragon, rendered in a high-contrast, dramatic style reminiscent of Frank Frazetta and Boris Vallejo, with a rich color palette and sweeping brushstrokes, capturing the essence of epic fantasy." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dynamic action scene featuring a celestial archer in mid-flight, shooting arrows of light towards a cosmic dragon, rendered in a high-contrast, dramatic style reminiscent of Frank Frazetta and Boris Vallejo, with a rich color palette and sweeping brushstrokes, capturing the essence of epic fantasy.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/2HQMp68uckV24yaawebgu.png" alt="An ancient library hidden within a colossal tree, floating books and magical runes, soft natural lighting, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp focus, art by Brian Froud and Gustav Klimt" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ancient library hidden within a colossal tree, floating books and magical runes, soft natural lighting, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp focus, art by Brian Froud and Gustav Klimt</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/Zw3-NMnfbjPb4p3Zefvbx.png" alt="A futuristic cyberpunk street market in Tokyo, bustling with neon-lit holographic displays and diverse characters, captured in a dynamic composition with a high contrast color palette, inspired by Syd Mead and Katsuhiro Otomo, high definition digital art." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market in Tokyo, bustling with neon-lit holographic displays and diverse characters, captured in a dynamic composition with a high contrast color palette, inspired by Syd Mead and Katsuhiro Otomo, high definition digital art.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/fUqUavLFilI8KpRKwNcDO.png" alt="A serene underwater cityscape illuminated by bioluminescent algae, featuring futuristic architecture with organic curves, rendered in a hyper-realistic style with vibrant blues and greens, detailed textures of coral and seaweed, and a soft, dreamy atmosphere, inspired by the works of H.R. Giger and Zdzisław Beksiński." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater cityscape illuminated by bioluminescent algae, featuring futuristic architecture with organic curves, rendered in a hyper-realistic style with vibrant blues and greens, detailed textures of coral and seaweed, and a soft, dreamy atmosphere, inspired by the works of H.R. Giger and Zdzisław Beksiński.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/jacE1cDmunuqwBvh7sFv5.png" alt="A tranquil Zen garden in the heart of a futuristic metropolis, blending traditional Japanese aesthetics with modern architecture, featuring a contemplative figure in a minimalist kimono, illustrated in a serene, watercolor style with a focus on balance and harmony, inspired by the art of Hokusai and Leiji Matsumoto." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A tranquil Zen garden in the heart of a futuristic metropolis, blending traditional Japanese aesthetics with modern architecture, featuring a contemplative figure in a minimalist kimono, illustrated in a serene, watercolor style with a focus on balance and harmony, inspired by the art of Hokusai and Leiji Matsumoto.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/zKehi28-wfw9mHTKpqQh0.png" alt="A dynamic cyberpunk street market at dusk, bustling with neon-lit stalls and diverse characters, portrayed in a gritty, high-contrast style with a rich, saturated color palette, combining the urban realism of Edward Hopper with the futuristic visions of Syd Mead and the vibrant chaos of a Moebius panel." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dynamic cyberpunk street market at dusk, bustling with neon-lit stalls and diverse characters, portrayed in a gritty, high-contrast style with a rich, saturated color palette, combining the urban realism of Edward Hopper with the futuristic visions of Syd Mead and the vibrant chaos of a Moebius panel.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/ygo9wb7XpWhqMI7fw7I-x.png" alt="A surrealistic dreamscape featuring a celestial ballerina floating amidst a nebula of iridescent colors, her gown composed of bioluminescent flora and fauna, rendered in a blend of Gustav Klimt's opulence and Salvador Dalí's dreamlike distortions, trending on Artstation, created with V-Ray for a mystical, ethereal atmosphere." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic dreamscape featuring a celestial ballerina floating amidst a nebula of iridescent colors, her gown composed of bioluminescent flora and fauna, rendered in a blend of Gustav Klimt's opulence and Salvador Dalí's dreamlike distortions, trending on Artstation, created with V-Ray for a mystical, ethereal atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/6baoyayV4cBlokR3u7Had.png" alt="A whimsical, otherworldly tea party set in a floating, enchanted garden, where anthropomorphic animals dressed in Victorian attire sip from delicate teacups, all captured in a vibrant, impressionistic pastel style, with dappled sunlight and a playful, airy composition, inspiring a sense of wonder and delight, featured in Pixiv's fantasy art showcase." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical, otherworldly tea party set in a floating, enchanted garden, where anthropomorphic animals dressed in Victorian attire sip from delicate teacups, all captured in a vibrant, impressionistic pastel style, with dappled sunlight and a playful, airy composition, inspiring a sense of wonder and delight, featured in Pixiv's fantasy art showcase.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/Sk0BQCU9jABkEWY3hQqw5.png" alt="An epic steampunk cityscape at dusk, with towering zeppelins and intricate clockwork architecture, illuminated by the warm glow of brass lanterns and steam-powered streetlights, captured in a high-resolution digital painting inspired by the detailed realism of Craig Mullins and the atmospheric depth of Greg Rutkowski, for a AAA game concept." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An epic steampunk cityscape at dusk, with towering zeppelins and intricate clockwork architecture, illuminated by the warm glow of brass lanterns and steam-powered streetlights, captured in a high-resolution digital painting inspired by the detailed realism of Craig Mullins and the atmospheric depth of Greg Rutkowski, for a AAA game concept.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/_e_B73jo22eHkKLRGm3II.png" alt="A majestic phoenix rising from the ashes of a forgotten forest, its feathers a blend of vibrant autumn colors and fiery embers, captured in a hyper-realistic style with dramatic chiaroscuro lighting, inspired by the works of Caravaggio and Hayao Miyazaki." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A majestic phoenix rising from the ashes of a forgotten forest, its feathers a blend of vibrant autumn colors and fiery embers, captured in a hyper-realistic style with dramatic chiaroscuro lighting, inspired by the works of Caravaggio and Hayao Miyazaki.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/b-iM0kOWAWBDan1mMUel5.png" alt="A serene underwater cityscape illuminated by bioluminescent sea creatures, rendered in a hyper-realistic style with vibrant blues and greens, digital painting, art by Alex Ross and James Gurney, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater cityscape illuminated by bioluminescent sea creatures, rendered in a hyper-realistic style with vibrant blues and greens, digital painting, art by Alex Ross and James Gurney, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/M19gXRv0ndLhtSLL8NomY.png" alt="An ethereal, watercolor depiction of a mythical underwater kingdom, populated by graceful mermaids and fantastical sea creatures, with a palette of soft blues, greens, and purples, inspired by the fluidity and delicacy of John William Waterhouse and the whimsical fantasy of Brian Froud, with a focus on the interplay of light and water, creating a dreamlike, immersive experience." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal, watercolor depiction of a mythical underwater kingdom, populated by graceful mermaids and fantastical sea creatures, with a palette of soft blues, greens, and purples, inspired by the fluidity and delicacy of John William Waterhouse and the whimsical fantasy of Brian Froud, with a focus on the interplay of light and water, creating a dreamlike, immersive experience.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/dxT_D50BMrwKVSblsL1VB.png" alt="A surrealistic landscape where towering mushrooms serve as skyscrapers in a vibrant, bioluminescent city, illuminated by the soft glow of alien flora, rendered in a hyper-detailed, digital painting style reminiscent of H.R. Giger and Zdzislaw Beksinski, with a focus on intricate textures and a muted, otherworldly color palette." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic landscape where towering mushrooms serve as skyscrapers in a vibrant, bioluminescent city, illuminated by the soft glow of alien flora, rendered in a hyper-detailed, digital painting style reminiscent of H.R. Giger and Zdzislaw Beksinski, with a focus on intricate textures and a muted, otherworldly color palette.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/AXPFGqIiYr10Hl5A-39mE.png" alt=""A futuristic cyberpunk street market in Tokyo, neon lights reflecting off wet cobblestones, featuring diverse AI vendors and human patrons, rendered in a high-contrast, comic book style by Moebius and Dave Gibbons, with a bustling, energetic vibe, 4k ultra HD."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A futuristic cyberpunk street market in Tokyo, neon lights reflecting off wet cobblestones, featuring diverse AI vendors and human patrons, rendered in a high-contrast, comic book style by Moebius and Dave Gibbons, with a bustling, energetic vibe, 4k ultra HD."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/CSU6dh1O73tMM86FPicrb.png" alt="A futuristic cityscape under a vibrant aurora borealis, with sleek, neon-lit skyscrapers and flying cars, by Syd Mead and H.R. Giger, cyberpunk style, high contrast and metallic textures." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cityscape under a vibrant aurora borealis, with sleek, neon-lit skyscrapers and flying cars, by Syd Mead and H.R. Giger, cyberpunk style, high contrast and metallic textures.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/QA3Gw38U9B7kCXOfYGpxM.png" alt="A hyper-realistic digital illustration of a lone astronaut exploring a desolate alien planet, with dramatic volcanic landscapes and alien flora, in the style of Ridley Scott and H.R. Giger, with a gritty, atmospheric tone." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A hyper-realistic digital illustration of a lone astronaut exploring a desolate alien planet, with dramatic volcanic landscapes and alien flora, in the style of Ridley Scott and H.R. Giger, with a gritty, atmospheric tone.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/jgzCsGjAmg8BuYf6Y-jxu.png" alt="A steampunk inventor's workshop filled with whimsical mechanical creations and gadgets, set in a Victorian-era loft with exposed brick and wood beams, bathed in the warm glow of brass lamps, depicted in a highly detailed, photorealistic style with a touch of Art Nouveau flair, by Artgerm and Kevin Tong." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A steampunk inventor's workshop filled with whimsical mechanical creations and gadgets, set in a Victorian-era loft with exposed brick and wood beams, bathed in the warm glow of brass lamps, depicted in a highly detailed, photorealistic style with a touch of Art Nouveau flair, by Artgerm and Kevin Tong.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/PSxlinVeay99_m8VbLLFH.png" alt=""A hyper-detailed digital painting of a futuristic Tokyo under a perpetual aurora borealis, cyberpunk architecture, neon lights, volumetric lighting, digital art, artstation, concept art, inspired by the works of Syd Mead and Katsuhiro Otomo, with a blend of traditional Japanese elements, trending on pixiv"" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A hyper-detailed digital painting of a futuristic Tokyo under a perpetual aurora borealis, cyberpunk architecture, neon lights, volumetric lighting, digital art, artstation, concept art, inspired by the works of Syd Mead and Katsuhiro Otomo, with a blend of traditional Japanese elements, trending on pixiv"</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/mbQ3ARevk35BcNLAm5QAl.png" alt="An ethereal, watercolor landscape of a mythical forest where ancient trees glow with bioluminescent flowers, under a twilight sky. Concept art style, with a blend of realism and fantasy, influenced by the artistry of Eyvind Earle and Thomas Kinkade, capturing a tranquil yet magical mood." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal, watercolor landscape of a mythical forest where ancient trees glow with bioluminescent flowers, under a twilight sky. Concept art style, with a blend of realism and fantasy, influenced by the artistry of Eyvind Earle and Thomas Kinkade, capturing a tranquil yet magical mood.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/Hrdg4zBmwkoHyCThUkgBW.png" alt="A futuristic cyberpunk street market at twilight, neon signs reflecting off wet cobblestone, hyper-detailed, cinematic composition, digital art, influenced by Syd Mead's concept designs and the vibrant colors of James Gurney's landscapes." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market at twilight, neon signs reflecting off wet cobblestone, hyper-detailed, cinematic composition, digital art, influenced by Syd Mead's concept designs and the vibrant colors of James Gurney's landscapes.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/4zQ7m4hSvoLJj4M-a1yDq.png" alt="A serene underwater cityscape at twilight, illuminated by bioluminescent marine life, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Craig Mullins and Thomas Kinkade, high definition digital art, in the style of Zdzisław Beksiński and Feng Zhu" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater cityscape at twilight, illuminated by bioluminescent marine life, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Craig Mullins and Thomas Kinkade, high definition digital art, in the style of Zdzisław Beksiński and Feng Zhu</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/IES3kUv-QSg-yvmNfoQOS.png" alt="A serene, hyperrealistic depiction of a futuristic cityscape at dawn, with towering glass buildings reflecting a palette of soft oranges and purples. Digital painting, trending on ArtStation, with a focus on intricate details and atmospheric lighting, inspired by the works of Syd Mead and H.R. Giger." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene, hyperrealistic depiction of a futuristic cityscape at dawn, with towering glass buildings reflecting a palette of soft oranges and purples. Digital painting, trending on ArtStation, with a focus on intricate details and atmospheric lighting, inspired by the works of Syd Mead and H.R. Giger.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/zkvgU8DXCTQu4Ais4ujNT.png" alt=""An abstract expressionist portrait of a contemplative AI entity, composed of swirling, translucent layers of data streams and neural networks, illuminated by a soft, pulsating glow, created in the style of Jackson Pollock and David Hockney, for a thought-provoking visual on Pixiv."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"An abstract expressionist portrait of a contemplative AI entity, composed of swirling, translucent layers of data streams and neural networks, illuminated by a soft, pulsating glow, created in the style of Jackson Pollock and David Hockney, for a thought-provoking visual on Pixiv."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/i3NPdD6bdx-e7pHDgASMT.png" alt="An epic fantasy battle scene featuring a diverse array of mythical creatures and warriors, depicted in the vibrant and dynamic style of Frank Frazetta and Yoshitaka Amano, set against a backdrop of a fiery sunset over a rugged mountain range, with dramatic contrasts and sweeping cinematic angles, 8K resolution, trending on ArtStation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An epic fantasy battle scene featuring a diverse array of mythical creatures and warriors, depicted in the vibrant and dynamic style of Frank Frazetta and Yoshitaka Amano, set against a backdrop of a fiery sunset over a rugged mountain range, with dramatic contrasts and sweeping cinematic angles, 8K resolution, trending on ArtStation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/fJm3_Ile3p25hyySHX3XY.png" alt="A noble knight in a steampunk armor riding a mechanical dragon over a sprawling Victorian city, intricate line art with a sepia tone, digital illustration, art by Alphonse Mucha and Katsuhiro Otomo, ambient steam and fog effects, high resolution." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A noble knight in a steampunk armor riding a mechanical dragon over a sprawling Victorian city, intricate line art with a sepia tone, digital illustration, art by Alphonse Mucha and Katsuhiro Otomo, ambient steam and fog effects, high resolution.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/MCoMJsGD2KSjsO5WIK2hf.png" alt=""A steampunk inventor's workshop filled with mechanical wonders and glowing gears, in the style of Brom and James Gurney, with a rich, warm color scheme and intricate metalwork, highly detailed, sharp focus, digital painting, artstation."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A steampunk inventor's workshop filled with mechanical wonders and glowing gears, in the style of Brom and James Gurney, with a rich, warm color scheme and intricate metalwork, highly detailed, sharp focus, digital painting, artstation."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/51pJZ7YyqjCwx5y4f2tFX.png" alt="A tranquil moonlit forest with ethereal spirits dancing among the trees, with a soft, dreamlike quality, surrealist digital art, capturing the mystical essence of Salvador Dalí and the delicate brushwork of Claude Monet." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A tranquil moonlit forest with ethereal spirits dancing among the trees, with a soft, dreamlike quality, surrealist digital art, capturing the mystical essence of Salvador Dalí and the delicate brushwork of Claude Monet.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/gq5ofa3-J2x6crD-qWb6a.png" alt="A serene and luminous underwater cityscape with bioluminescent flora and fauna, rendered in a hyper-realistic style with soft, ethereal lighting, trending on ArtStation, by Alex Ross and James Gurney, 8K resolution, dreamlike atmosphere." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene and luminous underwater cityscape with bioluminescent flora and fauna, rendered in a hyper-realistic style with soft, ethereal lighting, trending on ArtStation, by Alex Ross and James Gurney, 8K resolution, dreamlike atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/yg2Ie9U9uIjsPSqxRaxgn.png" alt="An enigmatic, steampunk-inspired alchemist's laboratory, filled with intricate gears, bubbling flasks, and floating orbs of light, all rendered in a detailed, cross-hatched pen-and-ink technique, with a warm, sepia-toned palette that gives a nostalgic, Victorian feel, showcased in ArtStation's historical fantasy collection." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An enigmatic, steampunk-inspired alchemist's laboratory, filled with intricate gears, bubbling flasks, and floating orbs of light, all rendered in a detailed, cross-hatched pen-and-ink technique, with a warm, sepia-toned palette that gives a nostalgic, Victorian feel, showcased in ArtStation's historical fantasy collection.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/qJZ05OcUoZK53SqtXYFJY.png" alt="A dramatic, high-contrast portrait of a futuristic samurai, clad in a sleek, reflective armor with intricate, traditional Japanese motifs. The background is a stormy, mountainous landscape, with lightning illuminating the scene. The artwork blends the photorealistic style of Norman Rockwell with the atmospheric intensity of H.R. Giger, capturing a sense of timeless elegance and impending conflict." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dramatic, high-contrast portrait of a futuristic samurai, clad in a sleek, reflective armor with intricate, traditional Japanese motifs. The background is a stormy, mountainous landscape, with lightning illuminating the scene. The artwork blends the photorealistic style of Norman Rockwell with the atmospheric intensity of H.R. Giger, capturing a sense of timeless elegance and impending conflict.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/FiogV0lq6j07kKTIqkROF.png" alt="A surreal desert landscape with towering sand dunes and a sky filled with swirling galaxies, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Salvador Dali and Zdzisław Beksiński and Remedios Varo" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surreal desert landscape with towering sand dunes and a sky filled with swirling galaxies, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Salvador Dali and Zdzisław Beksiński and Remedios Varo</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/notIWv-oQOMQ8v42nTo31.png" alt="A futuristic cityscape at dusk with neon-lit skyscrapers and flying cars, digital painting by Syd Mead and Beeple, cyberpunk style, dynamic composition, moody atmosphere, featured on cgsociety." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cityscape at dusk with neon-lit skyscrapers and flying cars, digital painting by Syd Mead and Beeple, cyberpunk style, dynamic composition, moody atmosphere, featured on cgsociety.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
