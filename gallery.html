@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Dreams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .image-prompt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-item:hover .image-prompt {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">LLM Dreams</h1>
+<h2 class="mb-3">About This Gallery</h2>
+    <p>
+        All images in the LLM Dreams gallery are generated using the innovative <a href="" target="_blank" rel="noopener noreferrer">Flux model from the Black Forest Team</a>, powered by the 
+        <a href="https://fal.ai/" target="_blank" rel="noopener noreferrer">fal.ai API</a>. The prompts for these 
+        images were creatively brainstormed by <a href="https://deepseek.com/" target="_blank" rel="noopener noreferrer">DeepSeek</a>, drawing inspiration from existing Stable Diffusion prompts 
+        found in the 
+        <a href="https://huggingface.co/datasets/Gustavosta/Stable-Diffusion-Prompts" target="_blank" rel="noopener noreferrer">
+        Gustavosta/Stable-Diffusion-Prompts dataset</a> on Hugging Face.
+	All the code was written by <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>.
+    </p>
+        <div class="row" id="gallery">
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/Tw0g2HsmbUjbMZ7GARKiI.png" alt="A futuristic cyberpunk street market in Tokyo, bustling with holographic advertisements and neon lights, captured in a hyper-realistic style reminiscent of Syd Mead and Hideo Kojima, with dynamic perspectives and a vibrant color palette, featured in cinematic concept art." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market in Tokyo, bustling with holographic advertisements and neon lights, captured in a hyper-realistic style reminiscent of Syd Mead and Hideo Kojima, with dynamic perspectives and a vibrant color palette, featured in cinematic concept art.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/Y6JrPZaeb9Sj-XlfgdPiJ.png" alt="A surreal, dreamlike landscape where floating islands are connected by cascading waterfalls and rainbow-colored bridges, populated by ethereal, otherworldly creatures and flora, rendered in a whimsical, impressionistic style with soft, pastel colors and a whimsical, almost magical atmosphere, influenced by the art of Salvador Dalí and Hayao Miyazaki." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surreal, dreamlike landscape where floating islands are connected by cascading waterfalls and rainbow-colored bridges, populated by ethereal, otherworldly creatures and flora, rendered in a whimsical, impressionistic style with soft, pastel colors and a whimsical, almost magical atmosphere, influenced by the art of Salvador Dalí and Hayao Miyazaki.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/CXohsKdoNfFvNev7GSgdX.png" alt="A bustling, vibrant marketplace in a fantasy realm, with diverse creatures haggling over exotic goods under a sky filled with floating islands, colorful, lively, photorealistic, concept art, highly detailed, digital painting, art by Brian Froud and Terry Gilliam, sharp focus, 8K, dynamic composition." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A bustling, vibrant marketplace in a fantasy realm, with diverse creatures haggling over exotic goods under a sky filled with floating islands, colorful, lively, photorealistic, concept art, highly detailed, digital painting, art by Brian Froud and Terry Gilliam, sharp focus, 8K, dynamic composition.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/l2_VzNXPdsG4xPFm9-5Y6.png" alt="A majestic dragon soaring over a medieval city during a vibrant autumn sunset, its scales shimmering with the hues of the forest, in a blend of Gothic and Impressionist styles, highly detailed, digital painting, artstation, concept art, dramatic, sharp focus, illustration, art by John Howe and Claude Monet." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A majestic dragon soaring over a medieval city during a vibrant autumn sunset, its scales shimmering with the hues of the forest, in a blend of Gothic and Impressionist styles, highly detailed, digital painting, artstation, concept art, dramatic, sharp focus, illustration, art by John Howe and Claude Monet.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/xR8zN6u8jy0y3xFfRMvyv.png" alt="An abstract expressionist depiction of a cosmic dance between nebulae, using bold strokes and vibrant colors in the style of Jackson Pollock and Hilma af Klint, with a chaotic yet harmonious composition, a surreal, energetic atmosphere, and a focus on the fluidity and movement of cosmic matter." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An abstract expressionist depiction of a cosmic dance between nebulae, using bold strokes and vibrant colors in the style of Jackson Pollock and Hilma af Klint, with a chaotic yet harmonious composition, a surreal, energetic atmosphere, and a focus on the fluidity and movement of cosmic matter.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/V3yU5CbuBTrkFsT8PL2nR.png" alt="A whimsical steampunk library with floating books and mechanical owls, oil painting, art by Brian Froud and Caspar David Friedrich, muted earthy tones, highly detailed, atmospheric, concept art, smooth brush strokes, ArtStation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical steampunk library with floating books and mechanical owls, oil painting, art by Brian Froud and Caspar David Friedrich, muted earthy tones, highly detailed, atmospheric, concept art, smooth brush strokes, ArtStation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/o8OmSwQWVkznFGuf04i6O.png" alt="An ancient library hidden within a massive tree, filled with glowing scrolls and mystical artifacts, digital painting, warm golden lighting, intricate details, art by magali villeneuve and craig mullins, fantasy illustration, sharp focus, concept art." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ancient library hidden within a massive tree, filled with glowing scrolls and mystical artifacts, digital painting, warm golden lighting, intricate details, art by magali villeneuve and craig mullins, fantasy illustration, sharp focus, concept art.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/w6RqtS-TAbjvj8_Y5zwfm.png" alt=""Ethereal fantasy landscape with floating islands suspended by ancient magic, depicted in a watercolor style by Thomas Kinkade, with pastel skies, gentle waterfalls, and a sense of whimsical wonder, capturing the essence of a fairy tale."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"Ethereal fantasy landscape with floating islands suspended by ancient magic, depicted in a watercolor style by Thomas Kinkade, with pastel skies, gentle waterfalls, and a sense of whimsical wonder, capturing the essence of a fairy tale."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/R8RNxrsYPGcRX3F0jQrgk.png" alt="A serene underwater cityscape illuminated by bioluminescent marine life, rendered in a hyper-realistic style with intricate details, soft pastel tones, and a tranquil atmosphere, inspired by the works of Jules Verne and H.R. Giger, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater cityscape illuminated by bioluminescent marine life, rendered in a hyper-realistic style with intricate details, soft pastel tones, and a tranquil atmosphere, inspired by the works of Jules Verne and H.R. Giger, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/fFLNAFqjWBGUJyAhgfgOj.png" alt="A whimsical, fantastical scene of a bustling medieval marketplace at dawn, with vendors selling enchanted goods, mythical creatures mingling with townsfolk, and a magical mist enhancing the vibrant colors and textures, illustrated in a rich, narrative style by N.C. Wyeth and Yoshitaka Amano, high-detailed, 4K." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical, fantastical scene of a bustling medieval marketplace at dawn, with vendors selling enchanted goods, mythical creatures mingling with townsfolk, and a magical mist enhancing the vibrant colors and textures, illustrated in a rich, narrative style by N.C. Wyeth and Yoshitaka Amano, high-detailed, 4K.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/Djtr8IPSY9pWhmclcTi8M.png" alt="A serene underwater scene featuring a graceful mermaid surrounded by bioluminescent jellyfish, rendered in a hyper-realistic style with soft, glowing lighting, inspired by the works of Howard Lyon and Norman Rockwell, with intricate details and a tranquil atmosphere, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater scene featuring a graceful mermaid surrounded by bioluminescent jellyfish, rendered in a hyper-realistic style with soft, glowing lighting, inspired by the works of Howard Lyon and Norman Rockwell, with intricate details and a tranquil atmosphere, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/Q6DvrEGn2T7KY8XuKctsG.png" alt=""A grand, opulent library with towering shelves filled with ancient, glowing tomes, set in a gothic cathedral-like structure, rendered in a rich, detailed pencil sketch style with dramatic, directional lighting, creating a mood of mystery and reverence, reminiscent of the art of Gustav Klimt and Alphonse Mucha, with a touch of steampunk elements."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A grand, opulent library with towering shelves filled with ancient, glowing tomes, set in a gothic cathedral-like structure, rendered in a rich, detailed pencil sketch style with dramatic, directional lighting, creating a mood of mystery and reverence, reminiscent of the art of Gustav Klimt and Alphonse Mucha, with a touch of steampunk elements."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/t5zcFRdumfEeSlWCECXON.png" alt="Surreal urban landscape under a swirling vortex sky, abandoned city with overgrown skyscrapers, by MC Escher and Banksy, monochromatic palette with splashes of neon, hyper-detailed graffiti art, dynamic perspective, dystopian vibe, cinematic wide-angle lens, trending on Behance." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>Surreal urban landscape under a swirling vortex sky, abandoned city with overgrown skyscrapers, by MC Escher and Banksy, monochromatic palette with splashes of neon, hyper-detailed graffiti art, dynamic perspective, dystopian vibe, cinematic wide-angle lens, trending on Behance.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/vmKWwPeopDwRj7eU8wKwi.png" alt="An ancient library hidden within a mountain, with towering shelves of ancient scrolls and artifacts, a beam of sunlight piercing through a skylight, and a scholar in a hooded robe reading by candlelight, surrealist digital painting, artstation, mystical atmosphere, smooth textures, art by gustav klimt and h.r. giger." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ancient library hidden within a mountain, with towering shelves of ancient scrolls and artifacts, a beam of sunlight piercing through a skylight, and a scholar in a hooded robe reading by candlelight, surrealist digital painting, artstation, mystical atmosphere, smooth textures, art by gustav klimt and h.r. giger.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/blwLjnJPrFB0mu4yf4m2y.png" alt="A hauntingly beautiful underwater scene featuring a ghostly, ethereal mermaid serenely gliding through a sunken, ancient temple, her hair flowing like seaweed in the currents. The environment is bathed in soft, blue-green light, with intricate details reminiscent of the works of Howard Lyon and Aaron Blaise, rendered in a photorealistic, almost tangible quality." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A hauntingly beautiful underwater scene featuring a ghostly, ethereal mermaid serenely gliding through a sunken, ancient temple, her hair flowing like seaweed in the currents. The environment is bathed in soft, blue-green light, with intricate details reminiscent of the works of Howard Lyon and Aaron Blaise, rendered in a photorealistic, almost tangible quality.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/rabbit/zlK8rS7dJkYBm21wK16Qt.png" alt="An ethereal dreamscape where floating islands are connected by luminous bridges, depicted in a surrealist watercolor style with soft, pastel hues and whimsical flora, inspired by the works of Salvador Dalí and Hayao Miyazaki, highly detailed and atmospheric." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal dreamscape where floating islands are connected by luminous bridges, depicted in a surrealist watercolor style with soft, pastel hues and whimsical flora, inspired by the works of Salvador Dalí and Hayao Miyazaki, highly detailed and atmospheric.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/9kFdg6o2t5T9hkx7fMcuU.png" alt="A mystical underwater kingdom inhabited by ethereal merfolk, their palace constructed from coral and pearl, depicted in a vibrant, photorealistic style with a focus on fluid dynamics and light refraction, inspired by the art of Howard David Johnson and the color palette of Claude Monet's water lilies, with a serene and enchanting atmosphere." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A mystical underwater kingdom inhabited by ethereal merfolk, their palace constructed from coral and pearl, depicted in a vibrant, photorealistic style with a focus on fluid dynamics and light refraction, inspired by the art of Howard David Johnson and the color palette of Claude Monet's water lilies, with a serene and enchanting atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/EIg6WGcVb7Rhy65l6qHPk.png" alt=""A serene underwater cityscape illuminated by bioluminescent marine life, rendered in a hyper-realistic style by Antonio Morandi, featuring intricate coral architecture, soft blue and green hues, and a tranquil, dreamlike atmosphere, trending on Artstation."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A serene underwater cityscape illuminated by bioluminescent marine life, rendered in a hyper-realistic style by Antonio Morandi, featuring intricate coral architecture, soft blue and green hues, and a tranquil, dreamlike atmosphere, trending on Artstation."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/_a7Ri9w_fSI3HLOm3tLzg.png" alt=""A surreal desert landscape with towering sand sculptures and a caravan of mythical creatures, twilight sky with a mix of stars and swirling colors, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by beksinski and james jean, mystical mood"" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A surreal desert landscape with towering sand sculptures and a caravan of mythical creatures, twilight sky with a mix of stars and swirling colors, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by beksinski and james jean, mystical mood"</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/IkAytWgcUgKNgiLgxhMR1.png" alt="A dynamic, futuristic cityscape at dusk, where neon lights and holographic billboards create a vibrant, cyberpunk atmosphere. The central focus is a sleek, flying car navigating through the bustling streets, with sharp, detailed textures and a high contrast color palette. The artwork combines photorealism with a touch of surrealism, emphasizing motion blur and depth of field, rendered in high resolution for a cinematic effect." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dynamic, futuristic cityscape at dusk, where neon lights and holographic billboards create a vibrant, cyberpunk atmosphere. The central focus is a sleek, flying car navigating through the bustling streets, with sharp, detailed textures and a high contrast color palette. The artwork combines photorealism with a touch of surrealism, emphasizing motion blur and depth of field, rendered in high resolution for a cinematic effect.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/0Yq8nj5YiEIsNbVsTLiWv.png" alt="A serene underwater city illuminated by bioluminescent sea creatures, rendered in a blend of Art Nouveau and cyberpunk aesthetics, with intricate metallic structures and soft, glowing light effects, digital painting, trending on Artstation, by James Gurney and Syd Mead." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater city illuminated by bioluminescent sea creatures, rendered in a blend of Art Nouveau and cyberpunk aesthetics, with intricate metallic structures and soft, glowing light effects, digital painting, trending on Artstation, by James Gurney and Syd Mead.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/71153VQVKDcjcP_Sv7Hvo.png" alt="A serene underwater cityscape at twilight, illuminated by bioluminescent marine life, rendered in a blend of hyper-realistic and impressionist styles, with soft, flowing brush strokes and sharp, detailed architectural elements, art by Claude Monet and H.R. Giger." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene underwater cityscape at twilight, illuminated by bioluminescent marine life, rendered in a blend of hyper-realistic and impressionist styles, with soft, flowing brush strokes and sharp, detailed architectural elements, art by Claude Monet and H.R. Giger.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/oxwZ6L_auBkA7C2bIRDZ6.png" alt="A whimsical forest glade where mythical creatures like unicorns and fairies coexist, their forms blending seamlessly with the natural environment, depicted in a surrealist watercolor painting, with a pastel color palette and soft, dreamlike lighting, evoking the spirit of Hayao Miyazaki and Maurice Sendak, featured on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical forest glade where mythical creatures like unicorns and fairies coexist, their forms blending seamlessly with the natural environment, depicted in a surrealist watercolor painting, with a pastel color palette and soft, dreamlike lighting, evoking the spirit of Hayao Miyazaki and Maurice Sendak, featured on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/lbpmGCwLSHZg3ZOIqEY69.png" alt=""A futuristic cyberpunk street market at night, neon signs reflecting on wet cobblestones, bustling with diverse cybernetic characters, ultra-detailed, dynamic lighting, concept art, art by Syd Mead and Beeple"" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A futuristic cyberpunk street market at night, neon signs reflecting on wet cobblestones, bustling with diverse cybernetic characters, ultra-detailed, dynamic lighting, concept art, art by Syd Mead and Beeple"</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/EI9d6fuyMCa1-KToNwEdB.png" alt="A solitary astronaut floating in the vastness of space, tethered to a glowing, crystalline space station, with the Earth in the background, rendered in a surreal, dreamlike style with soft, pastel colors and a focus on the interplay of light and shadow, capturing a moment of introspection and awe, in the vein of Salvador Dalí and M.C. Escher, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A solitary astronaut floating in the vastness of space, tethered to a glowing, crystalline space station, with the Earth in the background, rendered in a surreal, dreamlike style with soft, pastel colors and a focus on the interplay of light and shadow, capturing a moment of introspection and awe, in the vein of Salvador Dalí and M.C. Escher, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/7wacY6w0wmebv834r8f61.png" alt="A steampunk astronaut exploring a lush alien jungle, equipped with brass and copper gear mechanisms, vibrant foliage, high contrast, digital art, cinematic, art by Brom and H.R. Giger" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A steampunk astronaut exploring a lush alien jungle, equipped with brass and copper gear mechanisms, vibrant foliage, high contrast, digital art, cinematic, art by Brom and H.R. Giger</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/W81w2eoBVCz1Y5x_ywODT.png" alt=""Portrait of an enigmatic sphinx-like creature with a blend of feline and human features, set against a backdrop of ancient Egyptian hieroglyphs, painted in a classical style by John William Waterhouse, with rich, golden tones and a mysterious, contemplative expression."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"Portrait of an enigmatic sphinx-like creature with a blend of feline and human features, set against a backdrop of ancient Egyptian hieroglyphs, painted in a classical style by John William Waterhouse, with rich, golden tones and a mysterious, contemplative expression."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/QCMliQgqoF10XJ3rRwU7I.png" alt="A surrealistic digital painting of an ancient library floating in the clouds, with towering bookshelves and ethereal light filtering through stained glass windows, by James Gurney, vibrant color palette, whimsical atmosphere, detailed textures, trending on ArtStation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic digital painting of an ancient library floating in the clouds, with towering bookshelves and ethereal light filtering through stained glass windows, by James Gurney, vibrant color palette, whimsical atmosphere, detailed textures, trending on ArtStation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/JpyVZhltWAJ4KMDGLOfax.png" alt="A whimsical steampunk market in a Victorian-era forest, where vendors sell mechanical insects and botanical gadgets. Highly detailed oil painting with warm sepia tones and intricate brass detailing, composition reminiscent of Hayao Miyazaki's fantasy landscapes, art by Brom and James Gurney." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical steampunk market in a Victorian-era forest, where vendors sell mechanical insects and botanical gadgets. Highly detailed oil painting with warm sepia tones and intricate brass detailing, composition reminiscent of Hayao Miyazaki's fantasy landscapes, art by Brom and James Gurney.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/rwAvNJDCvTgaiWU01pz0X.png" alt="A dramatic, cinematic depiction of a lone astronaut exploring an alien ocean world, the water a spectrum of iridescent blues and purples, the astronaut's suit glowing with bioluminescent algae, inspired by the vibrant color palettes of James Jean and the atmospheric depth of Roger Dean's landscapes, high resolution, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dramatic, cinematic depiction of a lone astronaut exploring an alien ocean world, the water a spectrum of iridescent blues and purples, the astronaut's suit glowing with bioluminescent algae, inspired by the vibrant color palettes of James Jean and the atmospheric depth of Roger Dean's landscapes, high resolution, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/17jUNx8wHtNE3lAG5t623.png" alt="A serene, moonlit garden where ethereal, floating lanterns illuminate a gathering of mythical creatures, including fairies, unicorns, and phoenixes. The scene captures a moment of magical harmony and beauty, with intricate, fantastical details and a soft, dreamy atmosphere. Art style inspired by Yoshitaka Amano and John William Waterhouse, with pastel, ethereal colors, and delicate, flowing lines. Masterpiece quality, trending on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene, moonlit garden where ethereal, floating lanterns illuminate a gathering of mythical creatures, including fairies, unicorns, and phoenixes. The scene captures a moment of magical harmony and beauty, with intricate, fantastical details and a soft, dreamy atmosphere. Art style inspired by Yoshitaka Amano and John William Waterhouse, with pastel, ethereal colors, and delicate, flowing lines. Masterpiece quality, trending on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/zebra/2e_vUAYkdrlzxFoTCJq3B.png" alt="A whimsical steampunk library with floating books and mechanical owls, set in a grand, Victorian-era room, intricate, elegant, highly detailed, digital painting, art by camille corot and tim burton, soft focus, warm, ambient lighting, trending on artstation, 8k resolution." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical steampunk library with floating books and mechanical owls, set in a grand, Victorian-era room, intricate, elegant, highly detailed, digital painting, art by camille corot and tim burton, soft focus, warm, ambient lighting, trending on artstation, 8k resolution.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/RfIHxHLdo-LVAu7X4MEk-.png" alt="A photorealistic digital scene of a lone astronaut exploring an alien planet with bioluminescent flora and fauna, by Ridley Scott, cool color palette, atmospheric perspective, detailed environmental design, sci-fi concept art." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A photorealistic digital scene of a lone astronaut exploring an alien planet with bioluminescent flora and fauna, by Ridley Scott, cool color palette, atmospheric perspective, detailed environmental design, sci-fi concept art.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/clcSRGZx9SCZp0dH7lf0N.png" alt="A vibrant, bustling market in a high-tech solarpunk village, where people of various species and cultures trade goods and share stories, with lush greenery, colorful fabrics, and gleaming solar panels, captured in a lively, energetic style with a bright, cheerful palette, influenced by the art of James Gurney and Katsuhiro Otomo, popular on Artstation." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A vibrant, bustling market in a high-tech solarpunk village, where people of various species and cultures trade goods and share stories, with lush greenery, colorful fabrics, and gleaming solar panels, captured in a lively, energetic style with a bright, cheerful palette, influenced by the art of James Gurney and Katsuhiro Otomo, popular on Artstation.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/_bthI3YbJcYOYFSZfgNfL.png" alt="A whimsical steampunk tea party set in a Victorian garden, with mechanical butterflies and steam-powered gadgets, illustration by Katsuhiro Otomo and Claire Wendling, intricate details, pastel and metallic color scheme, whimsical yet detailed composition, 4k digital art, Artstation highlight." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical steampunk tea party set in a Victorian garden, with mechanical butterflies and steam-powered gadgets, illustration by Katsuhiro Otomo and Claire Wendling, intricate details, pastel and metallic color scheme, whimsical yet detailed composition, 4k digital art, Artstation highlight.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/penguin/JJ8O4ir88ZxpeqwelBmMC.png" alt="An ethereal underwater kingdom where bioluminescent sea creatures illuminate ancient ruins, featuring a mermaid queen in a flowing gown made of seaweed and pearls, captured in a soft, pastel watercolor style by Claire Wendling and Thomas Kinkade, serene atmosphere, ultra-high definition." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal underwater kingdom where bioluminescent sea creatures illuminate ancient ruins, featuring a mermaid queen in a flowing gown made of seaweed and pearls, captured in a soft, pastel watercolor style by Claire Wendling and Thomas Kinkade, serene atmosphere, ultra-high definition.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/a4n4p6rrRP-LqQKZFRKmu.png" alt="A surrealistic landscape where the sky is a canvas of swirling galaxies and the ground is a mosaic of floating islands, each with its own ecosystem, rendered in the hyper-detailed style of H.R. Giger with elements of Gustav Klimt's gold leaf technique, featured on Artstation, 8k resolution, with a haunting, ethereal atmosphere." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A surrealistic landscape where the sky is a canvas of swirling galaxies and the ground is a mosaic of floating islands, each with its own ecosystem, rendered in the hyper-detailed style of H.R. Giger with elements of Gustav Klimt's gold leaf technique, featured on Artstation, 8k resolution, with a haunting, ethereal atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/koala/1PMpM_Gh4mvTnp6_K2y4B.png" alt="A serene zen garden with a meditating monk, cherry blossoms gently falling, minimalist yet detailed, soft pastel colors, in the style of georgia o'keeffe and hokusai, art by ilya kuvshinov and norman rockwell" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene zen garden with a meditating monk, cherry blossoms gently falling, minimalist yet detailed, soft pastel colors, in the style of georgia o'keeffe and hokusai, art by ilya kuvshinov and norman rockwell</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/-FNIyEv3LqfqCvrvtGbOd.png" alt="An ethereal forest where ancient trees are entwined with luminous vines and floating orbs of light, painted in a lush, dreamlike manner reminiscent of the Impressionist technique, with influences from Monet and Klimt, emphasizing a sense of wonder and mystery, detailed textures, Artstation highlight." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>An ethereal forest where ancient trees are entwined with luminous vines and floating orbs of light, painted in a lush, dreamlike manner reminiscent of the Impressionist technique, with influences from Monet and Klimt, emphasizing a sense of wonder and mystery, detailed textures, Artstation highlight.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/yP7tleFRH8MTRY85sRRhk.png" alt="A whimsical scene of a steampunk tea party in an enchanted forest, with intricate mechanical creatures serving tea to mythical beings, painted in a detailed, illustrative style by Brian Froud, with a warm, golden light and a rich, earthy color palette, evoking a sense of wonder and nostalgia." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A whimsical scene of a steampunk tea party in an enchanted forest, with intricate mechanical creatures serving tea to mythical beings, painted in a detailed, illustrative style by Brian Froud, with a warm, golden light and a rich, earthy color palette, evoking a sense of wonder and nostalgia.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/HlGtYG0i950bK3IMTOxUv.png" alt=""A whimsical tea party hosted by anthropomorphic forest creatures in a fantastical, oversized mushroom grove, soft, whimsical, pastel colors, impressionistic, style reminiscent of Beatrix Potter and Claude Monet, enchanting, ArtStation featured illustration."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A whimsical tea party hosted by anthropomorphic forest creatures in a fantastical, oversized mushroom grove, soft, whimsical, pastel colors, impressionistic, style reminiscent of Beatrix Potter and Claude Monet, enchanting, ArtStation featured illustration."</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/tiger/P35mNqGN3ZR7E010C7maI.png" alt="A Viking funeral at sea under a starry sky, with a longship ablaze and warriors in horned helmets, dramatic, oil painting, epic, art by Norman Rockwell and John Howe" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A Viking funeral at sea under a starry sky, with a longship ablaze and warriors in horned helmets, dramatic, oil painting, epic, art by Norman Rockwell and John Howe</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/monkey/pMm2Jtgz3b-rE_FdjjhKS.png" alt=""A serene underwater cityscape at twilight, bioluminescent marine life illuminating the scene, photorealistic, vibrant color palette, trending on ArtStation, cinematic composition, art by Craig Mullins and James Gurney"" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A serene underwater cityscape at twilight, bioluminescent marine life illuminating the scene, photorealistic, vibrant color palette, trending on ArtStation, cinematic composition, art by Craig Mullins and James Gurney"</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/kangaroo/RN-AO729rhFHlfatQABEt.png" alt="A futuristic cityscape at dusk, with towering skyscrapers covered in holographic advertisements and flying cars zipping through the sky, rendered in a hyper-realistic style with dynamic neon lighting and a moody, atmospheric haze, inspired by the works of Syd Mead and H.R. Giger, digital art, high detail, sharp focus." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cityscape at dusk, with towering skyscrapers covered in holographic advertisements and flying cars zipping through the sky, rendered in a hyper-realistic style with dynamic neon lighting and a moody, atmospheric haze, inspired by the works of Syd Mead and H.R. Giger, digital art, high detail, sharp focus.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/o4qtZN4RTXSwZv-72Wxeb.png" alt="A grand, opulent ballroom scene from the Victorian era, filled with elegantly dressed guests engaged in various social interactions, under a chandelier that casts a soft, romantic glow, portrayed in a highly detailed, realistic style with a focus on intricate details and historical accuracy, reminiscent of the paintings by Thomas Gainsborough and Jan van Eyck, with a modern, cinematic twist." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A grand, opulent ballroom scene from the Victorian era, filled with elegantly dressed guests engaged in various social interactions, under a chandelier that casts a soft, romantic glow, portrayed in a highly detailed, realistic style with a focus on intricate details and historical accuracy, reminiscent of the paintings by Thomas Gainsborough and Jan van Eyck, with a modern, cinematic twist.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/elephant/L77kXwjAjF9R4SZmOw2s3.png" alt="A dynamic cyberpunk cityscape at dusk, with neon signs reflecting off rain-soaked streets, featuring a lone figure in a high-tech exosuit overlooking the skyline, drawn in a blend of manga and photorealistic styles by Katsuhiro Otomo and Craig Mullins, with a vibrant color palette and sharp contrasts." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A dynamic cyberpunk cityscape at dusk, with neon signs reflecting off rain-soaked streets, featuring a lone figure in a high-tech exosuit overlooking the skyline, drawn in a blend of manga and photorealistic styles by Katsuhiro Otomo and Craig Mullins, with a vibrant color palette and sharp contrasts.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/pzgR8JlLnk3MhQuweEMYN.png" alt="A futuristic cyberpunk street market at dusk, neon lights reflecting off rain-soaked cobblestones, featuring diverse, bustling crowds and towering holographic advertisements, rendered in a vibrant, saturated color palette, photorealistic, cinematic composition, by artists like Syd Mead and Tsutomu Nihei, trending on Artstation, 4k, ray tracing effects." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market at dusk, neon lights reflecting off rain-soaked cobblestones, featuring diverse, bustling crowds and towering holographic advertisements, rendered in a vibrant, saturated color palette, photorealistic, cinematic composition, by artists like Syd Mead and Tsutomu Nihei, trending on Artstation, 4k, ray tracing effects.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/uECltF6YDsxz8VV35ngR2.png" alt="A futuristic cyberpunk street market in Tokyo at night, neon signs reflecting on wet cobblestones, bustling with diverse, highly detailed characters, digital art, art by syd mead and beksinski, sharp focus, dynamic composition, cinematic lighting, trending on artstation, 4k resolution." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A futuristic cyberpunk street market in Tokyo at night, neon signs reflecting on wet cobblestones, bustling with diverse, highly detailed characters, digital art, art by syd mead and beksinski, sharp focus, dynamic composition, cinematic lighting, trending on artstation, 4k resolution.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/lion/qq96lXzSol5WdUi8S9ZzP.png" alt="A serene digital landscape of a floating island amidst a nebula of iridescent colors, with ancient, ethereal trees and a waterfall cascading into the void, rendered in a hyper-realistic style by Beksinski and H.R. Giger, with a focus on intricate textures and atmospheric lighting." class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>A serene digital landscape of a floating island amidst a nebula of iridescent colors, with ancient, ethereal trees and a waterfall cascading into the void, rendered in a hyper-realistic style by Beksinski and H.R. Giger, with a focus on intricate textures and atmospheric lighting.</p>
+                </div>
+            </div>
+
+            <div class="col-12 gallery-item">
+                <img src="https://fal.media/files/panda/9YR91JeKDKZxFUfEXxycM.png" alt=""A grand, opulent Victorian-era ballroom scene, filled with aristocrats in lavish period costumes, intricate chandeliers casting warm, golden light, and a backdrop of lush, velvet drapes, painted in a highly detailed, photorealistic style with a touch of Art Nouveau flair by Alphonse Mucha and John Singer Sargent, featured on artstation."" class="img-fluid rounded" width="1024" height="768">
+                <div class="image-prompt rounded">
+                    <p>"A grand, opulent Victorian-era ballroom scene, filled with aristocrats in lavish period costumes, intricate chandeliers casting warm, golden light, and a backdrop of lush, velvet drapes, painted in a highly detailed, photorealistic style with a touch of Art Nouveau flair by Alphonse Mucha and John Singer Sargent, featured on artstation."</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
